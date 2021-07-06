@@ -7,6 +7,11 @@ package "ECサイト" as target_system {
     --
     pass
     name
+    address
+    tel
+    mail
+    del_flag
+    reg_date
   }
 
 
@@ -19,9 +24,40 @@ package "ECサイト" as target_system {
     total_price
   }
 
+
+  entity "購入詳細テーブル" as Entity03 <d_purchase_detail> {
+    + order_id [PK]
+    + datail_id [PK]
+    --
+    # item_code [FK]
+    price
+    num
+  }
+  
+  entity "商品マスタ" as Entity04 <m_items> {
+    + item_code [PK]
+    --
+    item_name
+    price
+    # category_id [FK]
+    image
+    detail
+    del_flag
+    reg_date
+  }
+  
+  entity "カテゴリマスタ" as Entity05 <m_category> {
+    + category_id [PK]
+    --
+    name
+    reg_date
+  }
+  
 }
 
 Entity01}|..||Entity02
+Entity02|..|Entity03
+
 
 
 @enduml    
