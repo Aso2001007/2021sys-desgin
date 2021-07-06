@@ -1,6 +1,8 @@
 ```stratuml
 @startuml
 
+
+
 package "ECサイト" as target_system {
   entity "顧客マスタ" as Entity01 <m_customers> {
     + customer_code [PK]
