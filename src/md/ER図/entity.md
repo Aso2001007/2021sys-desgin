@@ -11,7 +11,7 @@ package "ECサイト" as target_system {
 
 
 
-  entity "購入テーブル" as Entity02 <d_purchase> MAIN_ENTITY {
+  entity "購入テーブル" as Entity02 <d_purchase> {
     + order_id [PK]
     --
     # customer_code [FK]
