@@ -55,7 +55,7 @@ package "ECサイト" as target_system {
   
 }
 
-Entity01|o-r-o{Entity02
+Entity01|-r-{Entity02
 Entity02}|-r-||Entity03
 Entity03}|-d-||Entity04
 Entity04}|-l-||Entity05
