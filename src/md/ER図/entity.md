@@ -57,10 +57,10 @@ package "ECサイト" as target_system {
   
 }
 
-Entity01 |--|{ Entity02
-Entity02 ||--|{ Entity03
-Entity03 }--|| Entity04
-Entity04 }--|| Entity05
+Entity01 |o-ri-o|{ Entity02
+Entity02 ||-ri-|{ Entity03
+Entity03 }-do-|| Entity04
+Entity04 }o-le-|| Entity05
 
 
 
