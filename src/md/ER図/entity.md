@@ -1,4 +1,4 @@
-```stratuml
+```uml
 @startuml
 
 
