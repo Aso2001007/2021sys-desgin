@@ -1,7 +1,7 @@
 ```uml
 @startuml
 
-
+BackgroundColor White-Orenge
 
 package "ECサイト" as target_system {
   entity "顧客マスタ" as Entity01 <m_customers> {
